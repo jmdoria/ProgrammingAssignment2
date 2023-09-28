@@ -19,10 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-## Following the instructions "For this assignment, assume 
-## that the matrix supplied is always invertible"
-## Cache's the matrix inverse without checking or catching
-## any error 
+## Assuming the matrix returned by makeCacheMatrix is always invertible
+## calculates the inverse if it doensn't exist, on the contrary retrieves
+## the inverse from the cache  
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
